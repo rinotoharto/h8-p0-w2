@@ -1,4 +1,4 @@
-let nama = 'Rino'
+let nama = ''
 let peran = ''
 
 if (nama !== '' && peran === ''){
