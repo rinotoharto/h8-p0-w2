@@ -1,0 +1,44 @@
+//Soal 1 "Newton Second Law"
+
+SET m with 600
+SET a with 2
+SET newton with m * a
+
+DISPLAY newton
+
+
+//Soal 2 "Tahun Kabisat"
+
+SET tahun with number
+
+IF tahun % 4 == 0 AND tahun % 100 !== 0 THEN
+    DISPLAY 'Tahun Kabisat'
+ELSE IF tahun % 4 == 0 AND tahun % 100 == 0 AND tahun % 400 == 0 THEN
+    DISPLAY 'Tahun Kabisat'
+ELSE 
+    DISPLAY 'Tahun Biasa'
+
+
+//Soal 3 "Laundry Day"
+
+SET pakaian TO 1
+
+WHILE pakaian <= 20
+    DISPLAY "Masukan pakaian ke- " + pakaian 
+    INCREMENT pakaian
+ENDWHILE
+DISPLAY "Pakaian habis, nyalakan mesin cuci"
+
+
+//Soal 4 "Periksa Kuku"
+
+SET murid with 0
+SET panjangKuku with any value
+
+WHILE murid < 40
+    IF panjangKuku <= 2 THEN
+        DISPLAY "Puji Murid"
+    ELSE
+        DISPLAY "Hukum Murid"
+    murid++
+ENDWHILE
